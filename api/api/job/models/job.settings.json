@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "name": "Job"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "company": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "desc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "description.job-description",
+      "required": true
+    },
+    "localisation": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
