@@ -6,10 +6,12 @@ Fonts
 /* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
 
 /*
+
 =============== 
 Variables
 ===============
 */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 :root {
   /* dark shades of primary color*/
@@ -675,6 +677,7 @@ Projects
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
+
 .project-number {
   display: inline-block;
   font-size: 1.25rem;
@@ -908,6 +911,7 @@ About Page
 .about-img {
   margin-bottom: 2rem;
   height: 25rem;
+  object-fit: contain;
 }
 .about-text .section-title {
   margin-bottom: 2rem;

@@ -1,20 +1,17 @@
 import React, { useState } from "react"
 import Title from "./Title"
+import experiences from "../constants/experiences"
 import { FaAlignRight, FaAngleDoubleRight } from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 const Jobs = () => {
-  const data = useStaticQuery(query)
-  const {
-    allStrapiJobs: { nodes: jobs },
-  } = data
+  
 
   const [value, setValue] = useState(0)
 
   {/*const { company, position, date, desc, techno, localisation } = jobs[value]*/}
-  const { company, position, date, desc, localisation } = jobs[value]
-
+  const { title, company, date, lieu, desc } = experiences[value]
 
   return (
     <section className="section jobs">
@@ -24,16 +21,16 @@ const Jobs = () => {
 
         <div className="btn-container">
         {/* 
-          Map la donnée de jobs 
+          Map la donnée de experiences 
           Puis return un button
           QUi au clique set la valeur du job concerné
           Et devient un button avtif 
         */}
-          {jobs.map((job, idx) => {
+          {experiences.map((job, idx) => {
             return (
 
               <button
-                key={job.strapiId}
+                key={job.id}
                 onClick={() => setValue(idx)}
                 className={`job-btn ${idx === value && "active-btn"}`}
               >
@@ -46,9 +43,9 @@ const Jobs = () => {
         {/* job infor */}
 
           <article className="job-info">
-            <h3>{position}</h3>
+            <h3>{title}</h3>
             <h4>{company}</h4>
-            <p className="job-date">{date}, {localisation}</p>
+            <p className="job-date">{date}, {lieu}</p>
            {/* <div className="job-stack">
             {
               techno.map(stack => {
@@ -58,10 +55,10 @@ const Jobs = () => {
             </div>*/}
 
             {
-              desc.map((description) =>{
-                return <div key={description.id} className="job-desc">
+              desc.map((description, index) =>{
+                return <div key={index} className="job-desc">
                 <FaAngleDoubleRight className="job-incon"></FaAngleDoubleRight>
-                <p>{description.name}</p>
+                <p>{description}</p>
                 </div>
               })
             }
@@ -77,20 +74,3 @@ const Jobs = () => {
 
 export default Jobs
 
-const query = graphql`
-  {
-    allStrapiJobs(sort: { fields: strapiId, order: ASC }) {
-      nodes {
-        company
-        date
-        localisation
-        position
-        
-        desc {
-          name
-          id
-        }
-      }
-    }
-  }
-`
