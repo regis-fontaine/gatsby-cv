@@ -26,17 +26,13 @@ module.exports = {
       },
     },
      {
-       resolve: `gatsby-plugin-prefetch-google-fonts`,
+       resolve: `gatsby-plugin-google-fonts`,
        options: {
-         fonts: [
-           {
-             family: `Raleway`,
-             variants: [`400`, `700`],
-           },
-           {
-             family: `Montserrat`,
-           },
-         ],
+        fonts: [
+          `Raleway`,
+          `Monserrat\:400,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
        },
      },
   ],
