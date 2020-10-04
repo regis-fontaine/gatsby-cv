@@ -16,30 +16,32 @@ const Hero = () => {
   } = useStaticQuery(query)
   return (
     <header className="hero">
+
       <div className="section-center hero-center">
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-              <h1>Régis Fontaine</h1>
-              <h4>Développeur web JS & PHP/Symfony</h4>
-              <Link to="/contact" className="btn">
-                Me contacter
-              </Link>
-              <SocialLinks />
-            
+            <h1>Régis Fontaine</h1>
+            <h4>Développeur web JS & PHP/Symfony</h4>
+            <Link to="/#contact" className="btn">
+              Me contacter
+            </Link>
+            <SocialLinks />
           </div>
         </article>
         <Image fluid={fluid} className="hero-img" />
       </div>
+
     </header>
   )
+
 }
 
 export default Hero
 
 const query = graphql`
   {
-    file(relativePath: { eq: "hero-img.png" }) {
+    file(relativePath: { eq: "img2.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

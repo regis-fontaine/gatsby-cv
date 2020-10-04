@@ -17,11 +17,11 @@ const About = () => {
 const {info, title, stack} = about[0]
 
   return (
-    <Layout>
+    <>
     <SEO title="À propos" description="À propos de Régis Fontaine" />
-      <section className="about-page">
+      <section className="about-page" id="apropos">
         <div className="section-center about-center">
-          <Image fluid={fluid} className="about-img" />
+          {/* <Image fluid={fluid} className="about-img" /> */}
           <article className="about-text">
             
               <Title title={title} />
@@ -34,7 +34,7 @@ const {info, title, stack} = about[0]
           </article>
         </div>
       </section>
-    </Layout>
+</>
   )
 }
 

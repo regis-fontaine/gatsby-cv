@@ -1,10 +1,9 @@
 import React from "react"
-import Layout from "../components/Layout"
 
-const contact = () => {
+const Contact = () => {
   return (
-    <Layout>
-      <section className="contact-page" >
+    
+      <section className="contact-page" id="contact">
         <article className="contact-form">
           <h3>Contact</h3>
           <form action="https://formspree.io/f/xbjplbdl" method="POST">
@@ -34,8 +33,8 @@ const contact = () => {
           </form>
         </article>
       </section>
-    </Layout>
+   
   )
 }
 
-export default contact
+export default Contact

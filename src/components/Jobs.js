@@ -14,7 +14,7 @@ const Jobs = () => {
   const { title, company, date, lieu, desc } = experiences[value]
 
   return (
-    <section className="section jobs">
+    <section className="section" id="experiences">
       <Title title="expériences" />
       <div className="jobs-center">
         {/* btn container */}
@@ -65,9 +65,9 @@ const Jobs = () => {
           </article>
 
       </div>
-      <Link to="/about" className="btn center-btn" >
+      {/* <Link to="/about" className="btn center-btn" >
         En savoir plus
-      </Link>
+      </Link> */}
     </section>
   )
 }

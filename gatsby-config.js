@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
-    description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    title: "Régis Fontaine Portfolio",
+    description: "Portfolio de Régis Fontaine, crée avec gatsby",
+    author: "@regis-fontaine",
+    twitterUsername: "@regis-fontaine",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://regis-fontaine.netlify.app",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -30,11 +30,11 @@ module.exports = {
        options: {
          fonts: [
            {
-             family: `Roboto`,
+             family: `Raleway`,
              variants: [`400`, `700`],
            },
            {
-             family: `Open Sans`,
+             family: `Montserrat`,
            },
          ],
        },
