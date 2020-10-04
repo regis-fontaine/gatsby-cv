@@ -7,22 +7,25 @@ const Project = ({description,title, github, url, stack,image,id}) => {
   
   return <article className="project">
     {/* <Image fluid={image.childImageSharp.fluid} className="project-img" /> */}
+    <Image fluid={image} className="project-img" />
+    
+   
     <div className="project-info">
-      <span className="project-number">0{id + 1}</span>
+      <span className="project-number">0{id}</span>
       <h3>{title}</h3>
       <p className="project-desc">{description}</p>
       <div className="project-stack">
         {stack.map((item)=>{
-         return <span className="" key={item.id}>{item}</span>
+         return <span className="about-stack" key={item.id}>{item}</span>
         })}
       </div>
       <div className="project-link">
-        <a href={github}>
+       { github && (<a href={github}>
           <FaGithubSquare className="project-icon"/>
-        </a>
-        <a href={url}>
+        </a>) }
+        { url && (<a href={url}>
           <FaShareSquare className="project-icon"/>
-        </a>
+        </a>)}
       </div>
     </div>
   </article>

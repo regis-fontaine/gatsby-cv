@@ -9,7 +9,7 @@
     "github": "",
     "url": "",
     "stack": ["HTML","CSS","Javscript","Symfony 4"],
-    "image": ""
+    "image": "projects-1.jpg"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
       ".",
     "github": "",
     "url": "",
-    "stack": ["HTML","CSS","Javscript","Symfony 4", "React", "JWT Authentication"],
-    "image": ""
+    "stack": ["HTML","CSS","Javscript","Symfony 4", "React"],
+    "image": "projects-2.jpg"
   },
   {
     "id": 3,
@@ -33,6 +33,6 @@
     "github": "",
     "url": "",
     "stack": ["HTML","CSS","Javscript","Gatsby.js", "React", "GraphQl"],
-    "image": ""
+    "image": "projects-3.jpg"
   }
 ]

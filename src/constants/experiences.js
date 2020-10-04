@@ -12,7 +12,7 @@ export default [
       `Intégration d’email et création des formulaires associés`,
       `Réalisation de landing pages`,
       `Développement des insertions CRM`,
-      `Gestion des leads via l’ERP`,
+      `Gestion de l’ERP`,
     ],
   },
   {
