@@ -19,7 +19,8 @@ const {info, title, stack} = about[0]
   return (
     <>
     <SEO title="À propos" description="À propos de Régis Fontaine" />
-      <section className="about-page" id="apropos">
+      <section  className="about-page" id="apropos" data-sal="slide-down" data-sal-delay="1000"
+  data-sal-easing="easeOutElastic">
         <div className="section-center about-center">
           {/* <Image fluid={fluid} className="about-img" /> */}
           <article className="about-text">
