@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-json`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,23 +27,24 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
-     {
-       resolve: `gatsby-plugin-google-fonts`,
-       options: {
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
         fonts: [
           `Raleway`,
-          `Monserrat\:400,700` // you can also specify font weights and styles
+          `Monserrat\:400,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-       },
-     },
-     {
+        display: "swap",
+      },
+    },
+    {
       resolve: "gatsby-plugin-page-progress",
       options: {
         includePaths: ["/"],
         excludePaths: [],
-        color: "#ff0000"
-      }
-    }
+        color: "#ff0000",
+      },
+    },
+
   ],
 }

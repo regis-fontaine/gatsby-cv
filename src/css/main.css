@@ -85,6 +85,7 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--ff-primary);
@@ -93,6 +94,7 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 5rem;
+  scroll-behavior: smooth;
 }
 ul {
   list-style-type: none;
@@ -880,7 +882,7 @@ Footer
 }
 .footer h4 {
   margin-top: 0.5rem;
-  color: var(--clr-white);
+  color: var(--clr-grey-3);
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -891,7 +893,7 @@ Footer
   margin: 0 auto 1rem auto;
 }
 .footer .social-link {
-  color: var(--clr-white);
+  color: var(--clr-grey-3);
 }
 .footer .social-link:hover {
   color: var(--clr-primary-5);
@@ -1114,4 +1116,43 @@ DO: MDX
 --big {
   height: 30px;
   width: 30px;
+}
+
+
+/**
+* Scroll Arrow
+*/
+
+.arrow-container{
+ display: flex;
+ justify-content: flex-end;
+}
+
+
+.scrollTop {
+ color: #f5f5f5;
+ position: fixed; 
+  width: 20%;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: flex-end;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover{
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }

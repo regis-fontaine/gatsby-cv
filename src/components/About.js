@@ -26,7 +26,10 @@ const {info, title, stack} = about[0]
           <article className="about-text">
             
               <Title title={title} />
-              <p>{info}</p>
+              {info.map((line, idx) =>{
+              return <p key={idx}>{line}</p>
+
+              })}
               <div className="about-stack">
                 {stack.map((item,id)=>{
                  return <span key={id}>{item}</span>

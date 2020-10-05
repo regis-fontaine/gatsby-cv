@@ -5,7 +5,7 @@
     "company": "Le Paysan Urbain",
     "lieu": "Marseille",
     "description":
-      "Client : Le paysan Urbain Marseille \n Objectif : Créer un site administrable principale pour l'entreprise ainsi qu'un site pour chaque ville en gardant le même design. \n Projet fictif réalisé dans le crade d'une mise en situation professionnelle lors de ma formation chez Simplon. \n Le but était de répondre à la demande d'un client, de mettre en place la méthodologie Agile SCRUM et d'exploiter le framework Symfony.",
+      "Création d'un site administrable principale pour l'entreprise ainsi qu'un site pour chaque ville en gardant le même design. Projet fictif réalisé dans le cadre d'une mise en situation professionnelle lors de ma formation chez Simplon. \n Le but était de répondre à la demande d'un client, de mettre en place la méthodologie Agile SCRUM et d'exploiter le framework Symfony.",
     "github": "",
     "url": "",
     "stack": ["HTML","CSS","Javscript","Symfony 4"],
@@ -17,8 +17,8 @@
     "company": "Projet personnel",
     "lieu": "Marseille",
     "description":
-      ".",
-    "github": "",
+      "Application de gestion des clients et des factures pour les travailleurs indépendants.",
+    "github": "https://github.com/regis-fontaine/gestion-client-app",
     "url": "",
     "stack": ["HTML","CSS","Javscript","Symfony 4", "React"],
     "image": "myclient.jpg"
@@ -29,10 +29,10 @@
     "company": "Projet personnel",
     "lieu": "Marseille",
     "description":
-      ".",
-    "github": "",
+      "Portfolio réalisé avec Gatsby.js et déployé avec Netlify.",
+    "github": "https://github.com/regis-fontaine/gatsby-cv",
     "url": "",
-    "stack": ["HTML","CSS","Javscript","Gatsby.js", "React", "GraphQl"],
+    "stack": ["HTML","CSS","Javscript","Gatsby.js", "React"],
     "image": "portfolio.jpg"
   }
 ]
