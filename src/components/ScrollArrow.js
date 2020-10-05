@@ -18,13 +18,15 @@ const ScrollArrow = () =>{
   const scrollTop = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
-
-  window.addEventListener('scroll', checkScrollTop)
+  if (typeof window !== `undefined`) {
+    window.addEventListener('scroll', checkScrollTop)
+  }
+ 
 
   return (
       <div className="arrow-container">
 
-        <FaArrowCircleUp className="scrollTop" onClick={typeof window !== `undefined` ? scrollTop : null} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
+        <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
       </div>
   );
 }
