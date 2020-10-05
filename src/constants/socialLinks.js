@@ -8,12 +8,12 @@ const data = [
   {
     id: 1,
     icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
-    url: "https://www.twitter.com",
+    url: "https://github.com/regis-fontaine",
   },
   {
     id: 2,
     icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    url: "www.linkedin.com/in/régis-fontaine",
   },
 ]
 const links = data.map(link => {
