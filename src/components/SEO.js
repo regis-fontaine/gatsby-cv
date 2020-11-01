@@ -31,6 +31,7 @@ const SEO = ({ title, description }) => {
   return (
     <Helmet htmlAttributes={{ lang: "fr" }} title={`${title} | ${siteTitle} `}>
       <meta name="description" content={description || siteDescription} />
+      <meta name="google-site-verification" content="dn9GF02_MSulsDIZQVZ87hO7JF4vWEWRom9v_irFVHk" />
       <meta name="image" content={image} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />

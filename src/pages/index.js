@@ -12,7 +12,7 @@ export default ({}) => {
 
   return (
     <Layout>
-      <SEO title="Accueil" description="Déscription du site" />
+      <SEO title="Accueil" description="Régis Fontaine Dévelopeur Web à la recherche d'une alternance" />
       <Hero />
       <About />
       <Jobs />
