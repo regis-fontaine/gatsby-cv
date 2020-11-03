@@ -38,7 +38,7 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDescription} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
-
+      <link rel="canonical" href={siteUrl} />
       {/* Do the same for insta */}
     </Helmet>
   )
