@@ -1,18 +1,19 @@
 import React from "react"
 import about from "../constants/about"
-import Layout from "../components/Layout"
-import { graphql, useStaticQuery } from "gatsby"
+// import Layout from "../components/Layout"
+// import { graphql } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 import Title from "../components/Title"
-import Image from "gatsby-image"
-import SEO from "../components/SEO"
+// import Image from "gatsby-image"
+// import SEO from "../components/SEO"
 
 // ...GatsbyImageSharpFluid
 const About = () => {
-  const {
-    file: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
+  // const {
+  //   file: {
+  //     childImageSharp: { fluid },
+  //   },
+  // } = useStaticQuery(query)
 
   const { info, title, stack } = about[0]
 
@@ -43,14 +44,14 @@ const About = () => {
 }
 
 export default About
-const query = graphql`
-  {
-    file(relativePath: { eq: "hero-img.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// const query = graphql`
+//   {
+//     file(relativePath: { eq: "hero-img.png" }) {
+//       childImageSharp {
+//         fluid {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `
