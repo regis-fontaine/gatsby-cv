@@ -14,31 +14,31 @@ const About = () => {
     },
   } = useStaticQuery(query)
 
-const {info, title, stack} = about[0]
+  const { info, title, stack } = about[0]
 
   return (
     <>
-    <SEO title="À propos" description="À propos de Régis Fontaine" />
-      <section  className="about-page" id="apropos" data-sal="slide-down" data-sal-delay="1000"
-  data-sal-easing="easeOutElastic">
+      {/* <SEO title="À propos" description="Régis Fontaine" /> */}
+      <section className="about-page" id="apropos" data-sal="slide-down" data-sal-delay="1000"
+        data-sal-easing="easeOutElastic">
         <div className="section-center about-center">
           {/* <Image fluid={fluid} className="about-img" /> */}
           <article className="about-text">
-            
-              <Title title={title} />
-              {info.map((line, idx) =>{
+
+            <Title title={title} />
+            {info.map((line, idx) => {
               return <p key={idx}>{line}</p>
 
+            })}
+            <div className="about-stack">
+              {stack.map((item, id) => {
+                return <span key={id}>{item}</span>
               })}
-              <div className="about-stack">
-                {stack.map((item,id)=>{
-                 return <span key={id}>{item}</span>
-                })}
-              </div>
+            </div>
           </article>
         </div>
       </section>
-</>
+    </>
   )
 }
 

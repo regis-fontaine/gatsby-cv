@@ -1,30 +1,18 @@
  [
   {
     "id": 1,
-    "title": "Le Paysan Urbain",
-    "company": "Le Paysan Urbain",
-    "lieu": "Marseille",
-    "description":
-      "Création d'un site administrable principale pour l'entreprise ainsi qu'un site pour chaque ville en gardant le même design. Projet fictif réalisé dans le cadre d'une mise en situation professionnelle lors de ma formation chez Simplon. \n Le but était de répondre à la demande d'un client, de mettre en place la méthodologie Agile SCRUM et d'exploiter le framework Symfony.",
-    "github": "",
-    "url": "",
-    "stack": ["HTML","CSS","Javscript","Symfony 4"],
-    "image": "paysanurbain.jpg"
-  },
-  {
-    "id": 2,
     "title": "My client",
     "company": "Projet personnel",
     "lieu": "Marseille",
     "description":
       "Application de gestion des clients et des factures pour les travailleurs indépendants.",
     "github": "https://github.com/regis-fontaine/gestion-client-app",
-    "url": "",
-    "stack": ["HTML","CSS","Javscript","Symfony 4", "React"],
+    "url": "https://gestion-client-app.herokuapp.com/",
+    "stack": ["HTML","CSS","Javscript","Symfony 4", "React", "Heroku"],
     "image": "myclient.jpg"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Portfolio",
     "company": "Projet personnel",
     "lieu": "Marseille",
@@ -32,7 +20,19 @@
       "Portfolio réalisé avec Gatsby.js et déployé avec Netlify.",
     "github": "https://github.com/regis-fontaine/gatsby-cv",
     "url": "",
-    "stack": ["HTML","CSS","Javscript","Gatsby.js", "React"],
+    "stack": ["HTML","CSS","Javscript","Gatsby.js", "React", "Netlify"],
     "image": "portfolio.jpg"
+  },
+  {
+    "id": 3,
+    "title": "EmailSender",
+    "company": "Projet personnel",
+    "lieu": "Marseille",
+    "description":
+      "L'application a pour but d'envoyer un e-mail automatiquement à un intervalle choisi.",
+    "github": "https://github.com/regis-fontaine/laravel-vue",
+    "url": "https://gentle-sierra-57451.herokuapp.com/",
+    "stack": ["HTML","CSS","Javscript","Laravel", "Vuejs", "InertiaJs", "TailwindCSS", "Github", "Heroku"],
+    "image": "emailsender.jpg"
   }
 ]

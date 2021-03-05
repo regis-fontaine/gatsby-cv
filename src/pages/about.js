@@ -14,23 +14,23 @@ const About = () => {
     },
   } = useStaticQuery(query)
 
-const {info, title, stack} = about[0]
+  const { info, title, stack } = about[0]
 
   return (
     <Layout>
-    <SEO title="À propos" description="À propos de Régis Fontaine" />
+      <SEO title="À propos" description="Régis Fontaine" />
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={fluid} className="about-img" />
           <article className="about-text">
-            
-              <Title title={title} />
-              <p>{info}</p>
-              <div className="about-stack">
-                {stack.map((item,id)=>{
-                 return <span key={id}>{item}</span>
-                })}
-              </div>
+
+            <Title title={title} />
+            <p>{info}</p>
+            <div className="about-stack">
+              {stack.map((item, id) => {
+                return <span key={id}>{item}</span>
+              })}
+            </div>
           </article>
         </div>
       </section>

@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import SEO from "../components/SEO"
 // Revoir définition
 // ...GatsbyImageSharpFluid
 // childImageSharp
@@ -15,24 +16,27 @@ const Hero = () => {
     },
   } = useStaticQuery(query)
   return (
-    <header className="hero">
+    <>
+      <SEO title=" " description="Régis Fontaine" />
+      <header className="hero">
 
-      <div className="section-center hero-center">
-        <article className="hero-info">
-          <div>
-            <div className="underline"></div>
-            <h1>Régis Fontaine</h1>
-            <h4>Développeur web JS & PHP/Symfony</h4>
-            <Link to="/#contact" className="btn">
-              Me contacter
+        <div className="section-center hero-center">
+          <article className="hero-info">
+            <div>
+              <div className="underline"></div>
+              <h1>Régis Fontaine</h1>
+              <h4>Développeur web Javascript & PHP</h4>
+              <Link to="/#contact" className="btn">
+                Me contacter
             </Link>
-            <SocialLinks />
-          </div>
-        </article>
-        <Image fluid={fluid} className="hero-img" />
-      </div>
+              <SocialLinks />
+            </div>
+          </article>
+          <Image fluid={fluid} className="hero-img" />
+        </div>
 
-    </header>
+      </header>
+    </>
   )
 
 }
