@@ -10,21 +10,21 @@ const Projects = ({ title, showLink }) => {
     <section className="section projects" id="projets">
       <Title title={title} />
       <div className="section-center projects-center">
-      {data.allProjectsJson.edges.map((project,idx) => {
-        console.log(project.node.stack)
-   return <Project
-          description={project.node.description}
-          title={project.node.title}
-          github={project.node.github}
-          url={project.node.url}
-          id={idx + 1}
-          key={idx}
-          image={project.node.image.childImageSharp.fluid}
-          stack={project.node.stack}
-        />
-   
-  })}
-        
+        {data.allProjectsJson.edges.map((project, idx) => {
+          // console.log(project.node.stack)
+          return <Project
+            description={project.node.description}
+            title={project.node.title}
+            github={project.node.github}
+            url={project.node.url}
+            id={idx + 1}
+            key={idx}
+            image={project.node.image.childImageSharp.fluid}
+            stack={project.node.stack}
+          />
+
+        })}
+
       </div>
       {showLink && (
         <Link to="/projects" className="btn center-btn">

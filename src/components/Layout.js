@@ -9,15 +9,15 @@ import ScrollArrow from "./ScrollArrow"
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false)
-const toggleSidebar = () => {
-  setIsOpen(!isOpen)
-  console.log("ok")
-}
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+    // console.log("ok")
+  }
   return (
     <>
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-      <ScrollArrow/>
+      <ScrollArrow />
       {children}
       <Footer />
     </>

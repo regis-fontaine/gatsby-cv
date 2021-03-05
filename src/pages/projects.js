@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql } from "gatsby"
-import Projects from "../components/Projects"
+// import { graphql } from "gatsby"
+// import Projects from "../components/Projects"
 // ...GatsbyImageSharpFluid
 
-const ProjectsPage = ({}) => {
+const ProjectsPage = ({ }) => {
   return <Layout>
     <section className="projects-page">
-     {/* <Projects projects={projects} title="all projects" /> */}
+      {/* <Projects projects={projects} title="all projects" /> */}
     </section>
   </Layout>
 }
