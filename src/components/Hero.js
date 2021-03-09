@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 import SEO from "../components/SEO"
 // Revoir définition
@@ -15,6 +14,7 @@ const Hero = () => {
       childImageSharp: { fluid },
     },
   } = useStaticQuery(query)
+
   return (
     <>
       <SEO title=" " description="Régis Fontaine" />
@@ -29,6 +29,7 @@ const Hero = () => {
               <Link to="/#contact" className="btn">
                 Me contacter
             </Link>
+
               <SocialLinks />
             </div>
           </article>

@@ -1,4 +1,3 @@
-import React from "react"
 export default [
   {
     id: 1,
@@ -15,7 +14,7 @@ export default [
       Le but était de répondre à la demande d'un client, de mettre en place la méthodologie Agile SCRUM et d'exploiter le framework Symfony.`,
     github: "io",
     url: "",
-    stack: [`HTML`,`CSS`,`Javscript`,`Symfony 4`],
+    stack: [`HTML`, `CSS`, `Javscript`, `Symfony 4`],
     image: "../assets/projects-1.jpg",
   },
   {
@@ -27,7 +26,7 @@ export default [
       `.`,
     github: "",
     url: "",
-    stack: [`HTML`,`CSS`,`Javscript`,`Symfony 4`, `React`],
+    stack: [`HTML`, `CSS`, `Javscript`, `Symfony 4`, `React`],
     image: "https://res.cloudinary.com/geris/image/upload/v1601812871/projects-3_zspqtj.jpg",
   },
   {
@@ -39,7 +38,7 @@ export default [
       `.`,
     github: "",
     url: "",
-    stack: [`HTML`,`CSS`,`Javscript`,`Gatsby.js`, `React`, `GraphQl`],
+    stack: [`HTML`, `CSS`, `Javscript`, `Gatsby.js`, `React`, `GraphQl`],
     image: "https://res.cloudinary.com/geris/image/upload/v1601812871/projects-2_iakiyp.jpg",
   },
 ]
